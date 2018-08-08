@@ -10,5 +10,6 @@ jobs:
           command: perl ./serveur.pl >/dev/null 2>&1 &
       - run:
           name: Test
-          command: ./test.sh
- 
+          command: |
+            chmod 700 ./test.sh
+            ./test.sh
