@@ -58,7 +58,9 @@ while($running){
 
 	# read up to 1024 characters from the connected client
 	my $data = '';
-	$client_socket->recv($data, 1024) or die("recv $!\n");
+	if(!defined($client_socket->recv($data, 1024))){
+		die("recv $!\n");
+	}
 	say("\tReceived data: $data\n");
 
 	# write response data to the connected client

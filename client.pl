@@ -44,7 +44,9 @@ shutdown($socket, 1) or die("shutdown $!\n");
 
 # receive a response of up to 1024 characters from server
 my $response = '';
-$socket->recv($response, 1024) or die("recv $!\n");
+if(!defined($socket->recv($response, 1024))){
+	die("recv $!\n");
+}
 print("\tReceived response: $response\n");
 
 $socket->close() or die("close $!\n");
