@@ -1,11 +1,14 @@
 #!/bin/sh
 # Test du serveur
 
-perl serveur.pl &
+# echo "Lancement Serveur"
+# perl serveur.pl >/dev/null 2>&1 &
+# sleep 2
 
 perl client 'localhost' '7777' 'stop'
 if [ $? -ne 0 ] ; then
-	echo "Client Erreur"
+	echo "KO"
 	exit 1
 fi
+echo "OK"
 exit 0
