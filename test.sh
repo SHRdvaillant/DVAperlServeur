@@ -2,8 +2,8 @@
 # Test du serveur
 
 # echo "Lancement Serveur"
-# perl serveur.pl >/dev/null 2>&1 &
-# sleep 2
+perl serveur.pl >/dev/null 2>&1 &
+sleep 2
 
 perl client.pl >./client.log 2>&1
 if [ $? -ne 0 ] ; then

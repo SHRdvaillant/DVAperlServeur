@@ -6,10 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Lance Serveur
-          command: perl ./serveur.pl
-      - run:
           name: Test
           command: |
             chmod 700 ./test.sh
             ./test.sh
+            cat ./serveur.log
+            cat ./client.log
