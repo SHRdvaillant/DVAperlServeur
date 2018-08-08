@@ -6,9 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Greeting
-          command: echo Hello, world.
+          name: Lance Serveur
+          command: perl ./serveur.pl >/dev/null 2>&1 &
       - run:
-          name: Print the Current Time
-          command: date
+          name: Test
+          command: ./test.sh
  
