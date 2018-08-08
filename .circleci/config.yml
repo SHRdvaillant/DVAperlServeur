@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: Lance Serveur
-          command: perl ./serveur.pl >/dev/null 2>&1 &
+          command: perl ./serveur.pl
       - run:
           name: Test
           command: |
