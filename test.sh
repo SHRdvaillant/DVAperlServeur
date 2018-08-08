@@ -12,7 +12,7 @@ if [ $? -ne 0 ] ; then
 fi
 echo "OK connexion allee-retour"
 
-perl client.pl localhost 7778 'stop' >./client.log 2>&1
+perl client.pl localhost 7777 'stop' >./client.log 2>&1
 if [ $? -ne 0 ] ; then
 	echo "KO stop"
 	exit 2
