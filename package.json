@@ -1,0 +1,12 @@
+{
+  "name": "DVAperlServeur",
+  "private": true,
+  "version": "1",
+  "description": "Demo app for container demonstrations",
+  "main": "serveur.pl",
+  "author": "dva",
+  "license": "Will be full of vulnerabilities!",
+  "dependencies": {
+    "perl": "5.26.1"
+  }
+}
