@@ -25,7 +25,7 @@ open ($LOG, '>', './serveur.log');
 
 sub say($){
 	my ($msg) = @_;
-	print("$msg");
+	# print("$msg");
 	print $LOG "$msg";
 }
 
