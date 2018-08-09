@@ -12,3 +12,5 @@ jobs:
             ./test.sh
             cat ./serveur.log
             cat ./client.log
+      - deploy:
+         command: $DOCKERHUBTRIGGER
