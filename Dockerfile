@@ -3,7 +3,7 @@ FROM perl:latest
 LABEL MAINTAINER=dva
 
 # Install Node etc...
-RUN capnm IO::Socket::INET
+RUN cpanm IO::Socket::INET
 
 # Copy source code to /DVAperlServeur in container
 COPY . /DVAperlServeur
