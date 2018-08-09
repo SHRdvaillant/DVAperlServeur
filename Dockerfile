@@ -12,4 +12,4 @@ COPY . /DVAperlServeur
 EXPOSE 7777
 
 # Run this command (starts the app) when the container starts
-CMD cd /DVAperlServeur && perl ./serveur.pl &
+CMD cd /DVAperlServeur && perl ./serveur.pl
