@@ -25,7 +25,7 @@ open ($LOG, '>', './serveur.log');
 
 sub say($){
 	my ($msg) = @_;
-	# print("$msg");
+	print("$msg");
 	print $LOG "$msg";
 }
 
@@ -42,7 +42,7 @@ my $socket = new IO::Socket::INET (
 	Reuse => 1
 );
 die "Cannot create socket $!\n" unless $socket;
-say("Server started on port $port\n");
+say("Server V2 started on port $port\n");
 
 my $running = 1;
 while($running){
